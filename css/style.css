@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------- common css------------- */
+
+body {
+    background: #F6F6F9;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.common-btn {
+    display: block;
+    color: #F6F6F9;
+    font-weight: 500;
+    font-style: italic;
+    padding: 15px 20px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+    background-image: linear-gradient(to bottom right, #9672FB, #D772FB);
+}
+
+.common-btn:focus {
+    outline: none;
+}
+
+/*----------------- common css end------------- */
+/*----------------- header css start------------- */
+.sticky-top {
+    background: #F6F6F9;
+}
+
+.logo-area {
+    padding-left: 15%;
+}
+
+.nav-area {
+    padding-right: 8%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+ul.nav li a {
+    display: block;
+    font-size: 14px;
+    color: #A19DAF;
+    font-weight: 500;
+    font-style: italic;
+    transition: all .5s;
+}
+
+ul.nav li:hover a {
+    color: #9672FB;
+
+}
+
+ul.nav li {
+    margin-right: 40px;
+}
+
+.bar-wrapper {
+    position: relative;
+    height: 43px;
+    width: 43px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .4s;
+    display: none;
+}
+
+.bar-wrapper:hover {
+    background: #E1E2EB;
+}
+
+.bar-wrapper .first-line {
+    background: #200E32;
+    width: 13px;
+    height: 2px;
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: all .4s !important;
+}
+
+.bar-wrapper .second-line {
+    background: #200E32;
+    width: 21px;
+    height: 2px;
+    position: absolute;
+    transform: translate(-0%, -50%);
+    border-radius: 2px;
+    top: 50%;
+    left: 0;
+    margin-left: 10px;
+    transition: all .4s !important;
+
+}
+
+.bar-wrapper .third-line {
+    background: #200E32;
+    width: 13px;
+    height: 2px;
+    position: absolute;
+    border-radius: 2px;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: all .4s !important;
+}
+
+
+/*----------------- header css end------------- */
+/*----------------- banner css start------------- */
+#banner-area .banner-title {
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 64px;
+}
+
+.banner-coloured-title {
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 64px;
+    color: #9672FB;
+    margin-bottom: 0;
+}
+
+.mouse-icon-border {
+    border: 2px solid #dadada;
+    height: 40px;
+    width: 25px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mouse-icon-scroller {
+    height: 7px;
+    width: 3px;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    border-radius: 15px;
+    background: #dadada;
+}
+
+/*----------------- banner css end------------- */
+/*----------------- how it works start------------- */
+
+.shape-bg {
+    background: url(../images/Shapes.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.common-title-1 {
+    font-weight: 600;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.common-desc {
+    text-align: center;
+    color: #7A7490;
+    font-style: italic;
+    line-height: 28px;
+}
+
+.common-title-2 {
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 64px;
+    color: #9672FB;
+    margin-bottom: 0;
+}
+
+/*-----------------how it works end------------- */
+/*-----------------superhero start------------- */
+#superhero-area {
+    overflow: hidden;
+}
+
+.superhero-title-wrapper p:first-child {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.superhero-title-wrapper {
+    padding-top: 80px;
+}
+
+
+/*-----------------superhero end------------- */
+/*-----------------photos pattern start------------- */
+#photos-pattterns-area {
+    overflow: hidden;
+}
+
+/*-----------------photos pattern  end------------- */
+/*-----------------download app start------------- */
+#download-app-area {
+    padding: 80px 0px;
+}
+
+/*-----------------download app end------------- */
+/*-----------------video area start------------- */
+#video-area {
+    position: relative;
+    padding: 80px 0px;
+
+}
+
+.video-icon-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-icon-title i.fa-play {
+    color: #F6F6F9;
+    font-size: 48px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#video-area .common-desc {
+    margin-bottom: 0;
+    color: #F6F6F9;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/*-----------------video area end------------- */
+/*-----------------download app start------------- */
+#get-started-area {
+    padding: 80px 0px;
+
+}
+
+.download-btn-wrapper img {
+    cursor: pointer;
+}
+
+/*-----------------download app end------------- */
+
+/*-----------------footer start------------- */
+#footer-area .social-icons li a {
+    display: block;
+    margin-right: 20px;
+    font-size: 30px;
+    color: #2F2651;
+}
+
+.social-icons {
+    margin: auto;
+}
+
+#footer-area h5 {
+    color: #2F2651;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.footer-text ul li a {
+    color: #A19DAF;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 25px;
+}
+
+/*-----------------footer end------------- */
+
+
+/*-----------------responsive part start------------- */
+@media screen and (max-width:1000px) {
+    .bar-wrapper {
+        display: block;
+    }
+
+    .nav-area {
+        position: unset;
+    }
+
+    /* #top-header {
+        position: relative;
+    } */
+
+    .nav-area .nav {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        background: #F6F6F9;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        box-shadow: 79px 67px 54px #17234d21;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .4s !important;
+
+    }
+
+    .nav-area .nav li {
+        margin-right: 0;
+        height: 80px;
+
+
+    }
+
+    .nav-area .nav li a {
+        padding: 15px 0px;
+        color: #2F2651;
+        font-size: 30px;
+        font-weight: 500;
+
+
+    }
+
+    .nav-area .nav li a:hover {
+        font-size: 25px;
+    }
+
+    .bar-click-second-line {
+        transition: all .4s;
+        transform: rotate(45deg) !important;
+    }
+
+    .bar-click-third-line {
+        transition: all .4s;
+        top: 50%;
+        width: 21px !important;
+        transform: rotate(-45deg);
+    }
+
+    .navblock {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition: all .4s;
+    }
+
+    .superhero-title-wrapper .common-title-2 {
+        font-size: 45px;
+    }
+}
+
+/*-----------------responsive part end------------- */
